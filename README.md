@@ -5,6 +5,7 @@ Objetivo: Desenvolver uma aplicação web simples, utilizando HTML, CSS e JavaSc
 Validação de formulários via estruturas condicionais (if/else) e expressões regulares (REGEX).
 
 Estrutura do Projeto
+
 O exercício deve ser organizado em três arquivos separados:
 
 index.html – marcação do formulário.
