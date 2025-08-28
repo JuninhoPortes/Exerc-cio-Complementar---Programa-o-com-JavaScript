@@ -1,113 +1,155 @@
-/* Reset básico */
+/* -----------------------------
+   RESET BÁSICO DE ESTILOS
+------------------------------ */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;                  /* Remove margens padrão dos navegadores */
+    padding: 0;                 /* Remove preenchimentos padrão */
+    box-sizing: border-box;    /* Garante que width/height incluam padding e border */
+    font-family: Arial, Helvetica, sans-serif; /* Define uma fonte padrão legível */
 }
 
+/* -----------------------------
+   ESTILO GERAL DO BODY
+------------------------------ */
 body {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Fundo com gradiente azul */
+    display: flex;                   /* Usa Flexbox para centralizar conteúdo */
+    justify-content: center;        /* Centraliza horizontalmente */
+    align-items: center;            /* Centraliza verticalmente */
+    min-height: 100vh;              /* Altura mínima igual à altura da tela */
 }
 
+/* -----------------------------
+   CONTAINER DO FORMULÁRIO
+------------------------------ */
 .container {
-    background: #fff;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    width: 100%;
-    max-width: 400px;
+    background: #fff;                                       /* Fundo branco */
+    padding: 25px 30px;                                     /* Espaçamento interno */
+    border-radius: 12px;                                    /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);                 /* Sombra suave */
+    width: 100%;                                            /* Ocupa toda a largura possível */
+    max-width: 400px;                                       /* Largura máxima de 400px */
 }
 
+/* -----------------------------
+   TÍTULO DO FORMULÁRIO
+------------------------------ */
 h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #333;
+    text-align: center;         /* Centraliza o texto */
+    margin-bottom: 10px;        /* Espaço abaixo do título */
+    color: #333;                /* Cor escura para boa leitura */
 }
 
+/* -----------------------------
+   SUBTÍTULO DO FORMULÁRIO
+------------------------------ */
 .subtitulo {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
+    text-align: center;         /* Centraliza o texto */
+    font-size: 14px;            /* Tamanho de fonte menor */
+    color: #666;                /* Cor cinza suave */
+    margin-bottom: 20px;        /* Espaço abaixo do subtítulo */
 }
 
+/* -----------------------------
+   ESTILO DOS RÓTULOS (LABELS)
+------------------------------ */
 label {
-    font-weight: bold;
-    margin: 10px 0 5px;
-    display: block;
-    color: #444;
+    font-weight: bold;          /* Negrito para destaque */
+    margin: 10px 0 5px;         /* Espaço acima e abaixo */
+    display: block;             /* Quebra de linha automática */
+    color: #444;                /* Cor mais escura para contraste */
 }
 
+/* -----------------------------
+   ESTILO DOS CAMPOS DE INPUT
+------------------------------ */
 input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    outline: none;
-    margin-bottom: 12px;
-    transition: 0.3s;
+    width: 100%;                        /* Ocupa toda a largura do container */
+    padding: 10px;                      /* Espaçamento interno */
+    border: 1px solid #bbb;            /* Borda cinza clara */
+    border-radius: 8px;                /* Bordas arredondadas */
+    outline: none;                     /* Remove contorno ao focar */
+    margin-bottom: 12px;               /* Espaço abaixo de cada input */
+    transition: 0.3s;                  /* Transição suave para interações */
 }
 
+/* -----------------------------
+   EFEITO AO FOCAR NO INPUT
+------------------------------ */
 input:focus {
-    border-color: #4facfe;
-    box-shadow: 0 0 6px rgba(79, 172, 254, 0.4);
+    border-color: #4facfe;                                 /* Altera cor da borda ao focar */
+    box-shadow: 0 0 6px rgba(79, 172, 254, 0.4);            /* Sombra azul ao redor do campo */
 }
 
+/* -----------------------------
+   INPUTS DE SENHA COM ÍCONE
+------------------------------ */
 .input-senha {
-    position: relative;
-    display: flex;
-    align-items: center;
+    position: relative;             /* Para posicionar o ícone sobre o input */
+    display: flex;                  /* Flexbox para alinhar elementos */
+    align-items: center;           /* Alinha verticalmente ao centro */
 }
 
+/* Campo de senha com espaço à direita para o ícone */
 .input-senha input {
     width: 100%;
-    padding-right: 35px;
+    padding-right: 35px;           /* Espaço para o ícone "olhinho" */
 }
 
+/* -----------------------------
+   ÍCONE PARA EXIBIR/OCULTAR SENHA
+------------------------------ */
 .toggle-senha {
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-    user-select: none;
-    font-size: 18px;
+    position: absolute;            /* Posiciona sobre o input */
+    right: 10px;                   /* Afastamento da borda direita */
+    cursor: pointer;               /* Cursor de mãozinha ao passar o mouse */
+    user-select: none;            /* Impede que o ícone seja selecionado */
+    font-size: 18px;               /* Tamanho do ícone */
 }
 
+/* -----------------------------
+   BOTÕES (CADASTRAR e LIMPAR)
+------------------------------ */
 .botoes {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+    display: flex;                 /* Organiza botões lado a lado */
+    justify-content: space-between; /* Espaço entre os botões */
+    margin-top: 15px;             /* Espaço acima dos botões */
 }
 
+/* Estilo base dos botões */
 .btn {
-    flex: 1;
-    padding: 10px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    flex: 1;                       /* Ocupa o mesmo espaço para ambos */
+    padding: 10px;                /* Espaçamento interno */
+    margin: 0 5px;                /* Espaço entre os botões */
+    border: none;                 /* Remove a borda */
+    border-radius: 8px;           /* Bordas arredondadas */
+    cursor: pointer;              /* Cursor de clique */
+    font-weight: bold;            /* Texto em negrito */
+    transition: 0.3s;             /* Efeito suave nas interações */
 }
 
+/* -----------------------------
+   BOTÃO CADASTRAR
+------------------------------ */
 .cadastrar {
-    background: #4facfe;
-    color: #fff;
+    background: #4facfe;          /* Cor de fundo azul */
+    color: #fff;                  /* Texto branco */
 }
 
+/* Efeito hover para o botão cadastrar */
 .cadastrar:hover {
-    background: #0084ff;
+    background: #0084ff;          /* Azul mais escuro ao passar o mouse */
 }
 
+/* -----------------------------
+   BOTÃO LIMPAR
+------------------------------ */
 .limpar {
-    background: #ddd;
-    color: #333;
+    background: #ddd;             /* Fundo cinza claro */
+    color: #333;                  /* Texto cinza escuro */
 }
 
+/* Efeito hover para o botão limpar */
 .limpar:hover {
-    background: #bbb;
+    background: #bbb;             /* Fundo um pouco mais escuro ao passar o mouse */
 }
